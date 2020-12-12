@@ -1,0 +1,27 @@
+1. Test upload with one photo - Photo should be uploaded / product should be created (check UI, check Database)
+2. Test upload with several photos - Photos should be uploaded  / product should be created (check UI, check Database)
+3. Test upload with several large photo files - (benchmarking needed though) - Photos should be uploaded / product should be created 
+3b. Negative testing, test upload with junk files / no files etc. - examine errors/ behaviour - ensure it is as expected in acceptance criteria
+4. Test product creation with all categories - products should be created / check each category is correct
+5. Create new product category - ensure it shows up in dropdown - create new product - ensure it is created. 
+6. Create new product, with normal price, in each currency - ensure products created, currency & price displayed 
+6b. Create new product, negative testing on price, insert text, minus numbers, junk - examine errors/ behaviour - ensure it is as expected in acceptance criteria
+6c. Create new currency - ensure it shows up in dropdown  - create new product - ensure it is created. 
+7. Create a set of products with autocalculate selected for each currency - get the currency conversion rates - ensure each conversion is correct & displayed correctly on each product
+8. Create a product with autocalculate not selected - enter one currency - ensure product currency displayed (repeat for each currency)
+8b. Create a product with autocalculate not selected - enter multiple currencies (i.e. select two at a time/ three at a time) - ensure product currencies displayed (
+8c. Create a product with autocalculate not selected - enter all currencies and check displayed
+
+I. Coverage / fragmentation tests
+
+Run above test cases on iOS, Android, Chrome, Firefox etc as appropriate. 
+
+Ensure application is responsive across all devices. 
+
+Ensure proper localization (i.e. product is displayed correctly in Russian, English, other supported languages)
+
+II. Optimisation of test cases. 
+
+For the above test cases, I would try to combine several of them into as few automation test 
+cases as possible - to ensure quick execution. Also the test cases could be left as they are, and parallelised to 
+ensure fast execution
